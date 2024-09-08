@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('New Build Notifications') {
        parallel {
-          stage ('Email notification') {
+          stage ('Email notifications') {
             steps {
                     echo '>>> Send New application build notification'
                     //mail bcc: '', body: 'Thanks', cc: '', from: '', replyTo: '', subject: "New Build # [$BUILD_NUMBER] triggered for Job [$JOB_NAME]", to: 'khaled.amrosy.fci@gmail.com'
